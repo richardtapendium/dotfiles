@@ -2,6 +2,7 @@ alias gs="git status"
 alias gb="git branch"
 alias gc="git checkout"
 alias glo="git log --oneline"
+alias gcm="git checkout master"
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 # Autojump - https://github.com/wting/autojump
