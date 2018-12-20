@@ -5,10 +5,16 @@ alias glo="git log --oneline"
 alias gcm="git checkout master"
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
-gpc () {
+gpush () {
   current_branch=$(git symbolic-ref HEAD 2>/dev/null) ||
   current_branch="(unnamed branch)"
   git push origin ${current_branch}
+}
+
+gpull () {
+  current_branch=$(git symbolic-ref HEAD 2>/dev/null) ||
+  current_branch="(unnamed branch)"
+  git pull origin ${current_branch}
 }
 
 # Autojump - https://github.com/wting/autojump
