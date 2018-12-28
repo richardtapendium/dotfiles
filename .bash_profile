@@ -3,6 +3,7 @@ alias gb="git branch"
 alias gc="git checkout"
 alias glo="git log --oneline"
 alias gcm="git checkout master"
+alias gcom="git commit -m"
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 gpush () {
