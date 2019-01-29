@@ -5,6 +5,7 @@ alias glo="git log --oneline"
 alias gcm="git checkout master"
 alias gcom="git commit -m"
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
+alias gitwipe="git reset && git checkout . && git clean -fd"
 
 gpush () {
   current_branch=$(git symbolic-ref HEAD 2>/dev/null) ||
