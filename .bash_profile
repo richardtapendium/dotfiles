@@ -11,6 +11,8 @@ alias lint="npm run lint"
 alias build="npm run build"
 alias start="npm run start"
 
+alias publishcheck="npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
+
 gpush () {
   current_branch=$(git symbolic-ref HEAD 2>/dev/null) ||
   current_branch="(unnamed branch)"
