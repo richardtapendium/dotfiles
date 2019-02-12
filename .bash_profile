@@ -10,6 +10,7 @@ alias gitwipe="git reset && git checkout . && git clean -fd"
 alias lint="npm run lint"
 alias build="npm run build"
 alias start="npm run start"
+alias i="npm install"
 
 alias publishcheck="npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
 
