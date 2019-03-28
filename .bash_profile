@@ -7,7 +7,10 @@ alias gcom="git commit -m"
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 alias gitwipe="git reset && git checkout . && git clean -fd"
 
+alias publishcheck="npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
+alias lock="ls | grep lock"
 alias lint="npm run lint"
+alias format="npm run format"
 alias build="npm run build"
 alias start="npm run start"
 alias i="npm install"
