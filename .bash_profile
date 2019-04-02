@@ -13,7 +13,14 @@ alias lint="npm run lint"
 alias format="npm run format"
 alias build="npm run build"
 alias start="npm run start"
-alias i="npm install"
+
+i () {
+  if [ $(lock) = "package-lock.json" ]; then
+    npm install
+  else
+    yarn
+  fi
+}
 
 alias publishcheck="npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
 
