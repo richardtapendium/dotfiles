@@ -22,8 +22,6 @@ i () {
   fi
 }
 
-alias publishcheck="npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
-
 gpush () {
   current_branch=$(git symbolic-ref HEAD 2>/dev/null) ||
   current_branch="(unnamed branch)"
