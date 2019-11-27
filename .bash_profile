@@ -4,6 +4,8 @@ alias gc="git checkout"
 alias glo="git log --oneline"
 alias gcm="git checkout master"
 alias gcom="git commit -m"
+alias gaa="git add ."
+alias gca="git commit --amend"
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 alias gitwipe="git reset && git checkout . && git clean -fd"
 
@@ -27,6 +29,13 @@ gpush () {
   current_branch="(unnamed branch)"
   git push origin ${current_branch}
 }
+
+gpushf () {
+  current_branch=$(git symbolic-ref HEAD 2>/dev/null) ||
+  current_branch="(unnamed branch)"
+  git push -f origin ${current_branch}
+}
+
 
 gpull () {
   current_branch=$(git symbolic-ref HEAD 2>/dev/null) ||
