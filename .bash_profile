@@ -24,6 +24,14 @@ i () {
   fi
 }
 
+vers () {
+  cat node_modules/$1/package.json | grep version
+}
+
+package () {
+  code node_modules/$1
+}
+
 gpush () {
   current_branch=$(git symbolic-ref HEAD 2>/dev/null) ||
   current_branch="(unnamed branch)"
