@@ -19,6 +19,8 @@ alias start="npm run start"
 alias sshme="ssh-add -D && ssh-add ~/.ssh/id_rsa_chardos"
 alias sshwork="ssh-add -D && ssh-add"
 
+alias lsg="ls | grep $1"
+
 i () {
   if [ $(lock) = "package-lock.json" ]; then
     npm install
