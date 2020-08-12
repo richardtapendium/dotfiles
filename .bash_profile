@@ -8,6 +8,7 @@ alias gaa="git add ."
 alias gca="git commit --amend"
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 alias gitwipe="git reset && git checkout . && git clean -fd"
+alias beep="echo -ne '\007'"
 
 alias publishcheck="npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
 alias lock="ls | grep lock"
