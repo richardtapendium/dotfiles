@@ -1,5 +1,6 @@
 alias gs="git status"
 alias gb="git branch"
+alias gbprune="git branch | grep -v master | xargs git branch -D"
 alias gc="git checkout"
 alias glo="git log --oneline"
 alias gcm="git checkout master"
